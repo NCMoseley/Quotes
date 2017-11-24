@@ -1,0 +1,55 @@
+
+
+
+http://localhost:3000/quotes/wp-json/wp/v2/posts
+
+
+ $(“#quote”).empty();
+  $(“#author”).empty();  
+  $(“#link”).empty();
+  
+  $(‘#new-quote-button’).on(‘click’, function(event) {
+    event.preventDefault();
+
+   $(“#quote”).empty();
+    $(“#author”).empty();  
+    $(“#link”).empty();
+
+   $.ajax({
+       method: ‘get’,
+       url: api_vars.root_url + ‘wp/v2/posts/’
+    
+   }).done( function(data) {
+      
+   
+       var i = Math.floor(Math.random() * data.length);
+        var quote = data[i].excerpt.rendered;
+        var author = data[i].title.rendered;
+        var link = data[i]._qod_quote_source_url;
+     
+
+       var d1 = document.getElementById(‘quote’);
+        d1.insertAdjacentHTML(‘beforeend’, quote );
+
+       var d2 = document.getElementById(‘author’);
+        d2.insertAdjacentHTML(‘beforeend’,  author  );
+
+       var d3 = document.getElementById(‘link’);
+        d3.insertAdjacentHTML(‘beforeend’,  ‘<a href=“’ + link + ‘“>’ + link + ‘</a>’ );
+      });
+  });
+
+
+    $.ajax({
+      method: 'get',
+      url: api_vars.root_url + 'wp/v2/posts/',
+      data: {
+         comment_status: 'closed'
+      },
+      beforeSend: function(xhr) {
+         xhr.setRequestHeader( 'X-WP-Nonce', api_vars.wpapi_nonce );
+      }
+   }).done( function() {
+      $('.entry-content').append('<h3>Looks like your on the right track.</h3>');
+      
+   });

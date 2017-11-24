@@ -16,7 +16,7 @@ get_header(); ?>
 
 			<?php the_post_navigation(); ?>
 
-		<?php endwhile; // End of the loop. ?>
+		<?php endwhile; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

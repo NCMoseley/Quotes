@@ -18,3 +18,32 @@ iframe,
 object {
 	max-width: 100%;
 }
+
+@media (min-width: 1080px){
+body{
+   padding: 50px;
+}
+img{
+    margin: 0 auto;
+    width: 700px;
+    
+}
+}
+@media (min-width: 620px){
+
+#site-navigation{
+    display: flex;
+    justify-content: flex-start;
+}
+
+body{
+   padding: 30px;
+}
+img{
+    margin: 0 auto;
+    width: 500px;
+	text-align: left;
+    
+}
+}
+

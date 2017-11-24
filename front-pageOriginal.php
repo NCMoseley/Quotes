@@ -19,7 +19,7 @@ get_header(); ?>
 <?php endif; ?>
 
 <div class="wrapper">
-<p class="entry-content" id="quote"></p>
+<p id="quote"></p>
 <h2 id="author"></h2>
 <p id="source"></p>
 <p id="link"></p>

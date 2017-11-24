@@ -4,4 +4,86 @@
 
 /* All Archives Page */
 
+.nav-previous {
+    display: none;
+}
+
+.site-main{
+    padding-bottom: 5rem;
+}
+
+#site-navigation{
+    display: flex;
+    a {
+    display: inline-flex;
+    color: $color__green;
+    font-family: Exo;
+    font-size: 1rem;
+    padding: 0 .7rem 0 .7rem;
+    border-right: 1px solid #fff;
+    // &:after{
+    // content: " | ";
+    // color: $color__text-main;
+    // font-family: FontAwesome;
+    // font-size: 20px;
+    // }
+    }
+}
+
+span.site-info {
+    color: #fff;
+    margin: 0 0 0 .7rem;
+    
+}
+
+
+@media (min-width: 1080px){
+
+#site-navigation{
+    display: flex;
+    justify-content:flex-end;
+}
+* {
+    text-align: center;
+    text-align: -webkit-center;
+    
+}
+
+body{
+   padding: 50px;
+}
+img{
+    margin: 0 auto;
+    width: 700px;
+}
+
+.entry-content{
+    p {
+    width: 60%;
+    text-align: center;
+}
+::before {
+    content: "\f10d";
+    // left: -175px;
+    color: $color__green;
+    font-family: FontAwesome;
+    font-size: 125px;
+    // line-height: 125px;
+    // position: absolute;
+    // top: 0;
+    }
+    ::after {
+    content: "\f10e";
+    // left: -175px;
+    color: $color__green;
+    font-family: FontAwesome;
+    font-size: 125px;
+    // line-height: 125px;
+    // position: absolute;
+    // top: 0;
+    }
+    }
+    
+}
+
 /* Submit a Quote Page */
