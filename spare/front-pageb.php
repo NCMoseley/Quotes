@@ -19,19 +19,18 @@ get_header(); ?>
 <?php endif; ?>
 
 <div class="wrapper">
-    <p id="quote"></p>
-  <div class="authorlink">
-    <h2 class="author" id="author"></h2>
-    <h2 id="source"></h2>
-    <!-- <p id="link"></p> -->
-  </div>  
+<p id="quote"></p>
+<h2 id="author"></h2>
+<p id="source"></p>
+<p id="link"></p>
 </div>
 
 <?php /* Start the Loop */ ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
+<!-- This is the Word press default comment generation Loop ====================================== -->
 
-    <button type="button" id="new-quote-button">Show Me Another!</button>
+    <!-- <?php get_template_part( 'template-parts/content' ); ?> -->
 
     <?php endwhile; ?>
 
@@ -47,4 +46,3 @@ get_header(); ?>
     </div>
 
 <?php get_footer(); ?>
-

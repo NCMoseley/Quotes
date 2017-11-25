@@ -53,3 +53,13 @@ http://localhost:3000/quotes/wp-json/wp/v2/posts
       $('.entry-content').append('<h3>Looks like your on the right track.</h3>');
       
    });
+
+
+    //  var d1 = document.getElementById('quote');
+    //  d1.insertAdjacentHTML('beforeend', quote );
+    //  var d2 = document.getElementById('author');
+    //  d2.insertAdjacentHTML('beforeend',  author );
+    //  var d3 = document.getElementById('source');
+    //  d3.insertAdjacentHTML('beforeend',  '<a href="' + source + '">' + source + '</a>' );
+    //  var d4 = document.getElementById('link');
+    //  d4.insertAdjacentHTML('beforeend',  '<a href="' + link + '">' + link + '</a>' );

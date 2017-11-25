@@ -7,6 +7,7 @@ $base__space-unit: 1.5rem;
 $color__background-body: #666;
 $color__text-main: #fff;
 $color__green: #0c0;
+$color__white: #fff;
 
 $color__background-screen: #f1f1f1;
 $color__text-screen: #21759b;
@@ -16,8 +17,8 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__link: royalblue;
-$color__link-visited: purple;
+$color__link: #0c0;
+$color__link-visited: rgb(0, 207, 190);
 $color__link-hover: midnightblue;
 
 // Typography
@@ -28,3 +29,4 @@ $font__1: 'Exo';
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+$font__size__main: 40px;

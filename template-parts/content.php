@@ -10,12 +10,18 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true );
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="quote" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="entry-content">
 	 <?php the_content(); ?>
-	</div><!-- .entry-content -->
-
+	</div> <!-- .entry-content -->
+  
+<div class="wrapper">
+<p class="entry-content" id="quote"></p>
+<h2 id="author"></h2>
+<p id="source"></p>
+<p id="link"></p>
+</div> 
 
 <div class="entry-meta">
   <?php the_title('<h2 class="entry-title">', '</h2>'); ?>
