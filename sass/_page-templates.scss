@@ -150,6 +150,7 @@
         span.site-info {
             color: $color__white;
             margin: 0 0 0 .7rem;
+            line-height: 22px;
         }
         #site-navigation {
             display: flex;
@@ -207,7 +208,6 @@
     }
 }
 
-
 /* Submit a Quote Page */
 
 #submit {
@@ -225,10 +225,84 @@
     }
 }
 
+/* Media Sizing for mobile size */
+
 @media (max-width: 620px) {
 #site-navigation {
     display: flex;
     flex-wrap: wrap;
     font-size: 22px;
 }
+}
+
+#new-quote-button {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    font-size: $font__size__sm;
+    color: $color__green;
+    padding: 20px;
+    width: 239px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid $color__green;
+}
+
+#new-quote-button:after {
+    content: "";
+    background: $color__white;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+#new-quote-button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+#submit {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    font-size: $font__size__sm;
+    color: $color__green;
+    padding: 20px;
+    width: 239px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid $color__green;
+}
+
+#submit:after {
+    content: "";
+    background: $color__white;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+#submit:active:after  {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
 }

@@ -25,12 +25,12 @@
 
 				<section class="home-hero">
 
-				<a href="<?php echo get_site_url() ?>" ><img class="site-description" src="<?php echo get_site_url().'/wp-content/themes/quotesondev/img/qod-logo.svg'; ?>"></img></a>
+				<a href="<?php echo get_site_url() ?>" ><img class="site-description" class="button" src="<?php echo get_site_url().'/wp-content/themes/quotesondev/img/qod-logo.svg'; ?>"></img></a>
     
                 </section>
 
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
+				<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					
 				</div><!-- .site-branding -->
 
 			</header><!-- #masthead -->
