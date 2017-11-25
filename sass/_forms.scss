@@ -39,7 +39,7 @@ input[type="password"],
 input[type="search"],
 textarea {
 	color: #666;
-	border: 1px solid #ccc;
+	border: 1px solid $color__green;
 	border-radius: 3px;
 
 	&:focus {

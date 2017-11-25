@@ -12,31 +12,29 @@ get_header(); ?>
 <?php the_title('<h1 class="entry-title">', '</h1>' ); ?>
 </header>
 
-
 <?php if(is_user_logged_in() && current_user_can( 'edit_posts' ) ): ?>
-
 
 <div class="quote-submission-wrapper">
 
 <form name="quoteForm" id="quote-submission-form" >
 
 <div>
-<label for="quote-author">Author of Quote</label>
+<label for="quote-author">Original Author</label>
 <input type="text" name="quote_author" id="quote-author" >
 </div>
 
 <div>
 <label for="quote-content">Quote</label>
-<textarea rows="3" cols="20" type="text" name="quote_content" id="quote-content" ></textarea>
+<textarea rows="3" cols="70" type="text" name="quote_content" id="quote-content" ></textarea>
 </div>
 
 <div>
-<label for="quote-source">What source did this come from?</label>
-<input type="text" name="quote_source" id="quote-source" >
+<label for="quote-source">What website/source did this come from?</label>
+<textarea rows="1" cols="40" type="text" name="quote_source" id="quote-source" ></textarea>
 </div>
 
 <div>
-<label for="quote-source-url">What is the url source?</label>
+<label for="quote-source-url">Website url:</label>
 <input type="url" name="quote_source_url" id="quote-source-url" >
 </div>
 

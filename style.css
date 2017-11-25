@@ -401,7 +401,7 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #666;
-  border: 1px solid #ccc;
+  border: 1px solid #0c0;
   border-radius: 3px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
@@ -835,32 +835,32 @@ object {
             justify-content: baseline; }
 
 @media (min-width: 1080px) {
-  .home, .page-template-default {
+  .home, .page-template-default, .post-template-default {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .home span.site-info, .page-template-default span.site-info {
+    .home span.site-info, .page-template-default span.site-info, .post-template-default span.site-info {
       color: #fff;
       margin: 0 0 0 .7rem; }
-    .home #site-navigation, .page-template-default #site-navigation {
+    .home #site-navigation, .page-template-default #site-navigation, .post-template-default #site-navigation {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end; }
-    .home *, .page-template-default * {
+    .home *, .page-template-default *, .post-template-default * {
       text-align: center;
       text-align: -webkit-center; }
-    .home body, .page-template-default body {
+    .home body, .page-template-default body, .post-template-default body {
       padding: 50px; }
-    .home img, .page-template-default img {
+    .home img, .page-template-default img, .post-template-default img {
       margin: 0 auto;
       width: 700px; }
-    .home #quote p, .page-template-default #quote p {
+    .home #quote p, .page-template-default #quote p, .post-template-default #quote p {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -875,9 +875,9 @@ object {
               align-items: center;
       min-height: 30vh;
       font-size: 40px; }
-    .home .home-hero, .page-template-default .home-hero {
+    .home .home-hero, .page-template-default .home-hero, .post-template-default .home-hero {
       padding-top: 3rem; }
-      .home .home-hero ::before, .page-template-default .home-hero ::before {
+      .home .home-hero ::before, .page-template-default .home-hero ::before, .post-template-default .home-hero ::before {
         content: "\f10d";
         left: 50px;
         top: 230px;
@@ -885,7 +885,7 @@ object {
         font-family: FontAwesome;
         font-size: 125px;
         position: absolute; }
-      .home .home-hero ::after, .page-template-default .home-hero ::after {
+      .home .home-hero ::after, .page-template-default .home-hero ::after, .post-template-default .home-hero ::after {
         content: "\f10e";
         right: 30px;
         top: 230px;
@@ -908,7 +908,20 @@ object {
 #submit {
   margin: 2rem 0 0 0; }
 
-section {
-  -webkit-box-pack: baseline;
-      -ms-flex-pack: baseline;
-          justify-content: baseline; }
+#quote-submission-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding-right: 5px; }
+  #quote-submission-form div {
+    padding: 1rem;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left; }

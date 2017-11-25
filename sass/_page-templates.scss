@@ -143,7 +143,7 @@
 
  @media (min-width: 1080px){
 
-.home, .page-template-default{
+.home, .page-template-default, .post-template-default{
     display: flex;
     justify-content: center;
     span.site-info {
@@ -216,6 +216,14 @@
     margin: 2rem 0 0 0;
 }
 
-section {
-    justify-content: baseline;
+#quote-submission-form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-right:5px;
+    div{
+        padding: 1rem;
+        align-items: left;
+    }
+
 }

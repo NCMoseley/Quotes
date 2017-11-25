@@ -30,7 +30,6 @@ get_header(); ?>
 <?php /* Start the Loop */ ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
-
     <button type="button" id="new-quote-button">Show Me Another!</button>
 
     <?php endwhile; ?>
