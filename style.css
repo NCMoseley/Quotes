@@ -976,6 +976,8 @@ object {
   color: #0c0;
   padding: 20px;
   width: 239px;
+  height: 48px;
+  line-height: 0px;
   text-align: center;
   -webkit-transition-duration: 0.4s;
   /* Safari */
@@ -1012,6 +1014,8 @@ object {
   color: #0c0;
   padding: 20px;
   width: 239px;
+  height: 48px;
+  line-height: 0px;
   text-align: center;
   -webkit-transition-duration: 0.4s;
   /* Safari */
