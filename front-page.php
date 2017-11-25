@@ -13,17 +13,17 @@ get_header(); ?>
 <?php if ( have_posts() ) : ?>
 
 <?php if ( is_home() && ! is_front_page() ) : ?>
-<header>
-<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-</header>
+  <header>
+    <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+  </header>
 <?php endif; ?>
 
 <div class="wrapper">
     <p id="quote"></p>
+    
   <div class="authorlink">
     <h2 class="author" id="author"></h2>
     <h2 id="source"></h2>
-    <!-- <p id="link"></p> -->
   </div>  
 </div>
 

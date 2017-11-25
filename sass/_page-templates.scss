@@ -2,7 +2,6 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-
 /* All */
 
 .nav-previous {
@@ -34,7 +33,7 @@
         flex: 0 0 auto;
         color: $color__green;
         font-family: Exo;
-        font-size: 1rem;
+        font-size: $sm__unit;
         padding: 0 .7rem 0 .7rem;
         border-right: 1px solid $color__white;
     }
@@ -43,18 +42,17 @@
 .authorlink {
     display: inline-flex;
     #source {
-        padding-left: 1rem;
+        padding-left: $sm__unit;
     }
 }
 
 .author::before {
     align-items: baseline;
     content: "\2014 ";
-    margin-right: 1rem;
+    margin-right: $sm__unit;
     color: $color__white;
     font-size: 26px;
 }
-
 
 /* All Archives Page */
 
@@ -68,10 +66,10 @@
         }
         ul {
             list-style: none;
-            padding: 2rem 0 0 0;
+            padding: $lg__unit 0 0 0;
             li {
                 float: left;
-                font-size: 1rem;
+                font-size: $sm__unit;
                 margin-bottom: .5rem;
                 margin-right: 1.125rem;
             }
@@ -89,10 +87,10 @@
         }
         ul {
             list-style: none;
-            padding: 2rem 0 0 0;
+            padding: $lg__unit 0 0 0;
             li {
                 float: left;
-                font-size: 1rem;
+                font-size: $sm__unit;
                 margin-bottom: .5rem;
                 margin-right: 1.125rem;
             }
@@ -110,10 +108,10 @@
         }
         ul {
             list-style: none;
-            padding: 2rem 0 0 0;
+            padding: $lg__unit 0 0 0;
             li {
                 float: left;
-                font-size: 1rem;
+                font-size: $sm__unit;
                 margin-bottom: .5rem;
                 margin-right: 1.125rem;
             }
@@ -167,7 +165,7 @@
             p {
                 display: flex;
                 width: 60vw;
-                padding: 2rem 0 2rem 0;
+                padding: $lg__unit 0 $lg__unit 0;
                 text-align: center;
                 justify-content: center;
                 align-items: center;
@@ -208,7 +206,7 @@
 /* Submit a Quote Page */
 
 #submit {
-    margin: 2rem 0 0 0;
+    margin: $lg__unit 0 0 0;
 }
 
 #quote-submission-form {
@@ -217,7 +215,7 @@
     align-items: left;
     padding-right: 5px;
     div {
-        padding: 1rem;
+        padding: $sm__unit;
         align-items: left;
     }
 }
