@@ -14,7 +14,7 @@
 				  <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</div>	
 				<div class="proud">
-				  <span class="site-info" href="<?php echo esc_url( 'https://github.com/NCMoseley?tab=repositories' ); ?>"><?php printf( esc_html( 'Brought to you by %s' ), "<text>NateDogg</text>" ); ?> </span>
+				  <span class="site-info" href="<?php echo esc_url( 'https://github.com/NCMoseley?tab=repositories' ); ?>"><?php printf( esc_html( 'Delivered to you by %s' ), "<text>Nate Dogg</text>" ); ?> </span>
 				</div>		
 			</nav><!-- #site-navigation -->
 				

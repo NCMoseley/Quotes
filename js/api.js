@@ -5,16 +5,14 @@
       url: api_vars.root_url + 'wp/v2/posts/?filter[orderby]=rand&filter[posts_per_page]=1',
 
    }).done( function(data) {
-     // populate slug for address bar
-    //  var slug = data[0].slug;
-    //  history.pushState(null, null, sluggedurl);
+    
+    
 
      // Arrange Api content
      var quote = data[0].content.rendered;
      var author = data[0].title.rendered;
      var source = data[0]._qod_quote_source;
-    //  var sluggedurl = api_vars.home_url + "/" + slug + "/";
-    //  var link = data[0]._qod_quote_source_url;
+    
       
      $('#quote').html(quote);
      $('#author').html(author);
@@ -24,13 +22,7 @@
 
 $('#new-quote-button').on('click', function(event) {
    event.preventDefault();
-    // $('article').empty();
-    // $('#quote').empty();
-    // $('#author').empty();  
-    // $('#source').empty();
-    // $('#link').empty();
-       
-
+   
    $.ajax({
       method: 'get',
       url: api_vars.root_url + 'wp/v2/posts/?filter[orderby]=rand&filter[posts_per_page]=1',
@@ -42,9 +34,10 @@ $('#new-quote-button').on('click', function(event) {
      var author = data[0].title.rendered;
      var source = data[0]._qod_quote_source;
 
+      // populate slug for address bar
      var slug = data[0].slug;
      var sluggedurl = api_vars.home_url + '/' + slug + '/';
-    //  var link = data[0]._qod_quote_source_url;
+   
 
     
       history.pushState(null, null, sluggedurl);

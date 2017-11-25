@@ -4,6 +4,10 @@
 
 /* All */
 
+.menu-toggle {
+    display: none;
+}
+
 .nav-previous {
     display: none;
 }
@@ -14,12 +18,13 @@
 
 #site-navigation {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    font-size: $font__size__sm;
     .proud {
         display: flex;
         white-space: nowrap;
         text {
-            color: $color__green;
+        color: $color__green;
         }
     }
 }
@@ -155,7 +160,7 @@
             text-align: -webkit-center;
         }
         body {
-            padding: 50px;
+            padding: 5%;
         }
         img {
             margin: 0 auto;
@@ -218,4 +223,12 @@
         padding: $sm__unit;
         align-items: left;
     }
+}
+
+@media (max-width: 620px) {
+#site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 22px;
+}
 }

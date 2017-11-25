@@ -1,40 +1,16 @@
-# Quotes on Dev Starter
-
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
-
-## Installation
-
-### 1. Download me (don't clone me!)
-
-Then add me to your `wp-content/themes` directory.
-
-### 2. Rename the `quotesondev-starter-master` directory
-
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)
 
 
+![](https://pbs.twimg.com/profile_images/721216106984292353/gwWrwwY-.jpg)
 
-to be completed..........
+# Quotes on Dev Interactive Webpage
 
-![](http.png)
+Quotes on Dev is a site used to experiment with Ajax, WP API, jQuery, and other cool things. 
 
-# Inhabitents Interactive Webpage
-
-A webpage dedicated to camping and glamping in the most hipster way possible. 
+This site is heavily inspired by Chris Coyier’s Quotes on Design.
 
 # README
 
-I enjoyed this project, it was very nice to be able to work with so many different layers, and create so much functionality so easily. I like the WordPress work flow, and I look forward to many more WP projects to come. 
+I enjoyed the challenge of this project. I had many learning opportunities while using Jquery and also vanilla java to manipulate the DOM and pull array data in the correct format. I am now quite familiar with the wordpress template hierarchy, and I look forward to continuing to build with WordPress.  
 
 
 ## Table of Contents
@@ -56,6 +32,6 @@ Shout out to Jim and Rose, who as always lead the way and help us on our journey
 
 Trnsfonter to generate my fonts. https://transfonter.org Fonts provided by Red Academy
 
-Filipe Merker on Stack Overflow provided me with the code for my navigation bar to 'toggle class' and change color. https://stackoverflow.com/questions/32856341/pure-js-add-and-remove-toggle-class-after-scrolling-x-amount
+
 
 
