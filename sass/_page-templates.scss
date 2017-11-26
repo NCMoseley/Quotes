@@ -14,6 +14,7 @@
 
 .site-main {
     padding-bottom: 5rem;
+    text-align: center;
 }
 
 #site-navigation {
@@ -333,6 +334,7 @@
     flex-direction: column;
     align-items: left;
     padding-right: 5px;
+    text-align: -webkit-center;
     div {
         padding: $sm__unit;
         align-items: left;
@@ -358,7 +360,7 @@
     width: 239px;
     height: 48px;
     line-height: 0px;
-    text-align: center;
+    // margin-left: 16rem;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     text-decoration: none;

@@ -728,7 +728,8 @@ object {
   display: none; }
 
 .site-main {
-  padding-bottom: 5rem; }
+  padding-bottom: 5rem;
+  text-align: center; }
 
 #site-navigation {
   display: -webkit-box;
@@ -1082,7 +1083,8 @@ object {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
-  padding-right: 5px; }
+  padding-right: 5px;
+  text-align: -webkit-center; }
   #quote-submission-form div {
     padding: 1rem;
     -webkit-box-align: left;
@@ -1108,7 +1110,6 @@ object {
   width: 239px;
   height: 48px;
   line-height: 0px;
-  text-align: center;
   -webkit-transition-duration: 0.4s;
   /* Safari */
   transition-duration: 0.4s;
