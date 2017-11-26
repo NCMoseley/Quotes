@@ -197,7 +197,7 @@
             padding-top: 3rem;
              ::before {
                 content: "\f10d";
-                left: 50px;
+                left: 100px;
                 top: 230px;
                 color: $color__green;
                 font-family: FontAwesome;
@@ -206,7 +206,7 @@
             }
              ::after {
                 content: "\f10e";
-                right: 30px;
+                right: 100px;
                 top: 230px;
                 color: $color__green;
                 font-family: FontAwesome;
@@ -276,7 +276,7 @@
             margin: 0 auto;
             width: 700px;
             transition-duration: 1.4s;
-             &:hover{
+            &:hover{
             width: 800px;
             
 		}
@@ -297,7 +297,7 @@
             padding-top: 3rem;
              ::before {
                 content: "\f10d";
-                left: 50px;
+                left: 100px;
                 top: 230px;
                 color: $color__green;
                 font-family: FontAwesome;
@@ -306,7 +306,7 @@
             }
              ::after {
                 content: "\f10e";
-                right: 30px;
+                right: 100px;
                 top: 230px;
                 color: $color__green;
                 font-family: FontAwesome;

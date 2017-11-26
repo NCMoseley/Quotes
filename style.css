@@ -636,9 +636,7 @@ object {
     width: 300px;
     text-align: left;
     -webkit-transition-duration: 1.4s;
-            transition-duration: 1.4s; }
-    img:hover {
-      width: 330px; } }
+            transition-duration: 1.4s; } }
 
 @media (min-width: 620px) {
   body {
@@ -651,9 +649,7 @@ object {
     width: 500px;
     text-align: left;
     -webkit-transition-duration: 1.4s;
-            transition-duration: 1.4s; }
-    img:hover {
-      width: 550px; } }
+            transition-duration: 1.4s; } }
 
 .post-archives {
   display: -webkit-box;
@@ -924,7 +920,7 @@ object {
       padding-top: 3rem; }
       .archive .home-hero ::before {
         content: "\f10d";
-        left: 50px;
+        left: 100px;
         top: 230px;
         color: #0c0;
         font-family: FontAwesome;
@@ -932,7 +928,7 @@ object {
         position: absolute; }
       .archive .home-hero ::after {
         content: "\f10e";
-        right: 30px;
+        right: 100px;
         top: 230px;
         color: #0c0;
         font-family: FontAwesome;
@@ -1044,7 +1040,7 @@ object {
       .page-template-default .home-hero ::before,
       .post-template-default .home-hero ::before {
         content: "\f10d";
-        left: 50px;
+        left: 100px;
         top: 230px;
         color: #0c0;
         font-family: FontAwesome;
@@ -1054,7 +1050,7 @@ object {
       .page-template-default .home-hero ::after,
       .post-template-default .home-hero ::after {
         content: "\f10e";
-        right: 30px;
+        right: 100px;
         top: 230px;
         color: #0c0;
         font-family: FontAwesome;
