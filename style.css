@@ -1080,7 +1080,7 @@ object {
 
 #new-quote-button {
   position: relative;
-  background-color: black;
+  background-color: #222;
   font-size: 20px;
   color: #0c0;
   padding: 20px;
@@ -1095,6 +1095,8 @@ object {
   overflow: hidden;
   cursor: pointer;
   border: 2px solid #0c0; }
+  #new-quote-button:hover {
+    border: 2px solid #1d471c; }
 
 #new-quote-button:after {
   content: "";
@@ -1118,7 +1120,7 @@ object {
 
 #submit {
   position: relative;
-  background-color: black;
+  background-color: #222;
   font-size: 20px;
   color: #0c0;
   padding: 20px;
@@ -1133,6 +1135,8 @@ object {
   overflow: hidden;
   cursor: pointer;
   border: 2px solid #0c0; }
+  #submit:hover {
+    border: 2px solid #1d471c; }
 
 #submit:after {
   content: "";
