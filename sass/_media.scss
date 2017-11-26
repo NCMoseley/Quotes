@@ -39,6 +39,10 @@ object {
 		margin: 0 auto;
 		width: 300px;
 		text-align: left;
+		transition-duration: 1.4s;
+        &:hover{
+        width: 330px;
+		}
 	}
 
 }
@@ -55,6 +59,10 @@ object {
 		margin: 0 auto;
 		width: 500px;
 		text-align: left;
+		transition-duration: 1.4s;
+        &:hover{
+        width: 550px;
+		}
 	}
 	
 }

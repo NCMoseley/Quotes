@@ -275,7 +275,11 @@
         img {
             margin: 0 auto;
             width: 700px;
+            transition-duration: 1.4s;
+             &:hover{
+            width: 800px;
             
+		}
         }
         #quote {
             p {

@@ -476,8 +476,13 @@ a {
     float: left;
     position: relative; }
   .main-navigation a {
-    display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    margin-left: 1rem;
+    color: #222;
+    -webkit-transition-duration: 1.4s;
+            transition-duration: 1.4s; }
+    .main-navigation a:hover {
+      color: white; }
 
 /* Small menu. */
 .menu-toggle,
@@ -629,7 +634,11 @@ object {
   img {
     margin: 0 auto;
     width: 300px;
-    text-align: left; } }
+    text-align: left;
+    -webkit-transition-duration: 1.4s;
+            transition-duration: 1.4s; }
+    img:hover {
+      width: 330px; } }
 
 @media (min-width: 620px) {
   body {
@@ -640,7 +649,11 @@ object {
   img {
     margin: 0 auto;
     width: 500px;
-    text-align: left; } }
+    text-align: left;
+    -webkit-transition-duration: 1.4s;
+            transition-duration: 1.4s; }
+    img:hover {
+      width: 550px; } }
 
 .post-archives {
   display: -webkit-box;
@@ -999,7 +1012,13 @@ object {
     .page-template-default img,
     .post-template-default img {
       margin: 0 auto;
-      width: 700px; }
+      width: 700px;
+      -webkit-transition-duration: 1.4s;
+              transition-duration: 1.4s; }
+      .home img:hover,
+      .page-template-default img:hover,
+      .post-template-default img:hover {
+        width: 800px; }
     .home #quote p,
     .page-template-default #quote p,
     .post-template-default #quote p {
