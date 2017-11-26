@@ -139,6 +139,103 @@
         justify-content: baseline;
     }
 }
+@media (min-width: 1080px) {
+
+.archive {
+        display: flex;
+        justify-content: center;
+        span.site-info {
+            color: $color__white;
+            margin: 0 0 0 .7rem;
+            line-height: 22px;
+        }
+        #site-navigation {
+            display: flex;
+            justify-content: flex-end;
+        }
+        * {
+            text-align: center;
+            text-align: -webkit-center;
+        }
+        body {
+            padding: 5%;
+        }
+        img {
+            margin: 0 auto;
+            width: 700px;
+            
+        }
+        h1{
+            text-align: left;
+            margin-top: 3rem;
+            padding: 0 0 3rem 0;
+            border-bottom: 1px dotted #fff;
+            width: 60%;
+        }
+        #quote {
+            p {
+                display: flex;
+                width: 60vw;
+                padding: $lg__unit 0 $lg__unit 0;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                min-height: 30vh;
+                font-size: $font__size__main;
+            }
+        }
+        .home-hero {
+            padding-top: 3rem;
+             ::before {
+                content: "\f10d";
+                left: 50px;
+                top: 230px;
+                color: $color__green;
+                font-family: FontAwesome;
+                font-size: 125px;
+                position: absolute;
+            }
+             ::after {
+                content: "\f10e";
+                right: 30px;
+                top: 230px;
+                color: $color__green;
+                font-family: FontAwesome;
+                font-size: 125px;
+                position: absolute;
+            }
+        }
+    }
+    article {
+        width: 60%;
+        border-bottom: 1px dotted #fff;
+        p{
+        font-size: 40px;
+        }
+        .entry-meta{
+        display: inline-flex;
+        span{
+        align-self: center;
+        font-size: 20px;
+        line-height: 15px;
+        }
+        h2{
+        align-items: baseline;
+        font-size: 20px;
+        }
+        h2::before{
+        content: "\2014 ";
+        color: #fff;
+        padding-right: .7rem;
+        }    
+        }
+    }
+    .entry-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 // <-- Main page CSS --> //
 @media (min-width: 1080px) {
