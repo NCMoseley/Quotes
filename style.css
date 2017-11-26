@@ -756,7 +756,12 @@ object {
     font-family: Exo;
     font-size: 1rem;
     padding: 0 .7rem 0 .7rem;
-    border-right: 1px solid #fff; }
+    -webkit-transition-duration: .4s;
+            transition-duration: .4s;
+    border: 1px solid #222;
+    border-right: 2px solid #fff; }
+    #primary-menu a:hover {
+      border: 2px solid #1d471c; }
 
 .authorlink {
   display: -webkit-inline-box;

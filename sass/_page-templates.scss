@@ -41,7 +41,12 @@
         font-family: Exo;
         font-size: $sm__unit;
         padding: 0 .7rem 0 .7rem;
-        border-right: 1px solid $color__white;
+        transition-duration: .4s;
+        border: 1px solid $color__background-body;
+        border-right: 2px solid $color__white;
+         &:hover{
+        border: 2px solid rgb(29, 71, 28);
+    }
     }
 }
 
