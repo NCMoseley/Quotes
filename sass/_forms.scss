@@ -39,6 +39,8 @@ textarea {
 	color: #666;
 	border: 1px solid $color__green;
 	border-radius: 3px;
+	background-color: grey;
+	outline: none;
 	&:focus {
 		color: #111;
 	}

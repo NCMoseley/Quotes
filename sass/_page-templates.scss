@@ -21,10 +21,11 @@
     flex-wrap: nowrap;
     font-size: $font__size__sm;
     .proud {
-        display: flex;
-        white-space: nowrap;
-        text {
-        color: $color__green;
+    display: flex;
+    white-space: nowrap;
+    font-weight: 100;
+    text {
+    color: $color__green;
         }
     }
 }
@@ -169,7 +170,7 @@
             text-align: left;
             margin-top: 3rem;
             padding: 0 0 3rem 0;
-            border-bottom: 1px dotted #fff;
+            border-bottom: 1px dotted $color__white;
             width: 60%;
         }
         #quote {
@@ -208,23 +209,27 @@
     }
     article {
         width: 60%;
-        border-bottom: 1px dotted #fff;
+        border-bottom: 1px dotted $color__white;
         p{
         font-size: 40px;
+        font-weight: 100;
         }
         .entry-meta{
         display: inline-flex;
         span{
         align-self: center;
         font-size: 20px;
+        font-weight: 100;
         }
         h2{
         align-items: baseline;
         font-size: 20px;
+        font-weight: 100;
+        
         }
         h2::before{
         content: "\2014 ";
-        color: #fff;
+        color: $color__white;
         padding-right: .7rem;
         }    
         }
