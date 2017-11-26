@@ -48,10 +48,12 @@
 .authorlink {
     display: inline-flex;
     #source {
-        padding-left: $sm__unit;
+    padding-left: $sm__unit;
     }
 }
-
+.author{
+    font-weight: 100;
+}
 .author::before {
     align-items: baseline;
     content: "\2014 ";

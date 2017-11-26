@@ -765,6 +765,9 @@ object {
   .authorlink #source {
     padding-left: 1rem; }
 
+.author {
+  font-weight: 100; }
+
 .author::before {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
