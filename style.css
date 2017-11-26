@@ -434,9 +434,9 @@ textarea {
 a {
   color: #0c0; }
   a:visited {
-    color: #00cfbe; }
+    color: #7e7e7e; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #00cfbe; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -761,7 +761,8 @@ object {
     border: 1px solid #222;
     border-right: 2px solid #fff; }
     #primary-menu a:hover {
-      border: 2px solid #1d471c; }
+      border: 2px solid #1d471c;
+      color: #1d471c; }
 
 .authorlink {
   display: -webkit-inline-box;
