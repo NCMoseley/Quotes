@@ -18,7 +18,7 @@
 
 </article><!-- #post-## -->
 
-<button type="button" class="ne"><?php previous_post_link( '%link', 'Previous Entry', TRUE ); ?></button>
-<button type="button" class="ne"><?php next_post_link( '%link', 'Next Entry', TRUE ); ?></button>
+<!-- <button type="button" class="ne"><?php previous_post_link( '%link', 'Previous Entry', TRUE ); ?></button>
+<button type="button" class="ne"><?php next_post_link( '%link', 'Next Entry', TRUE ); ?></button> -->
 
 

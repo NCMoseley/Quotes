@@ -30,19 +30,18 @@ get_header(); ?>
 <?php /* Start the Loop */ ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
-    <button type="button" id="new-quote-button">Show Me Another!</button>
-
     <?php endwhile; ?>
+      <button type="button" id="new-quote-button">Show Me Another!</button>
+    <!-- <?php the_posts_navigation(); ?>
 
-    <?php the_posts_navigation(); ?>
-
-    <?php else : ?>
+    <?php else : ?> -->
 
     <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
     <?php endif; ?>
 
     </main>
+       
     </div>
 
 <?php get_footer(); ?>

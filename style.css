@@ -930,7 +930,7 @@ object {
   .archive .home-hero ::before {
     content: "\f10d";
     left: 100px;
-    top: 230px;
+    top: 400px;
     color: #0c0;
     font-family: FontAwesome;
     font-size: 125px;
@@ -938,7 +938,7 @@ object {
   .archive .home-hero ::after {
     content: "\f10e";
     right: 100px;
-    top: 230px;
+    top: 400px;
     color: #0c0;
     font-family: FontAwesome;
     font-size: 125px;
@@ -1011,7 +1011,8 @@ div.entry-content {
       display: flex;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
-              justify-content: flex-end; }
+              justify-content: flex-end;
+      margin-top: 3rem; }
     .home *,
     .single *,
     .page-template-default *,
@@ -1044,7 +1045,7 @@ div.entry-content {
       display: -ms-flexbox;
       display: flex;
       width: 60vw;
-      padding: 2rem 0 2rem 0;
+      padding: 0 0 2rem 0;
       text-align: center;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -1054,33 +1055,28 @@ div.entry-content {
               align-items: center;
       min-height: 30vh;
       font-size: 40px; }
-    .home .home-hero,
-    .single .home-hero,
-    .page-template-default .home-hero,
-    .post-template-default .home-hero {
-      padding-top: 3rem; }
-      .home .home-hero ::before,
-      .single .home-hero ::before,
-      .page-template-default .home-hero ::before,
-      .post-template-default .home-hero ::before {
-        content: "\f10d";
-        left: 100px;
-        top: 230px;
-        color: #0c0;
-        font-family: FontAwesome;
-        font-size: 125px;
-        position: absolute; }
-      .home .home-hero ::after,
-      .single .home-hero ::after,
-      .page-template-default .home-hero ::after,
-      .post-template-default .home-hero ::after {
-        content: "\f10e";
-        right: 100px;
-        top: 230px;
-        color: #0c0;
-        font-family: FontAwesome;
-        font-size: 125px;
-        position: absolute; }
+    .home .home-hero ::before,
+    .single .home-hero ::before,
+    .page-template-default .home-hero ::before,
+    .post-template-default .home-hero ::before {
+      content: "\f10d";
+      left: 100px;
+      top: 270px;
+      color: #0c0;
+      font-family: FontAwesome;
+      font-size: 125px;
+      position: absolute; }
+    .home .home-hero ::after,
+    .single .home-hero ::after,
+    .page-template-default .home-hero ::after,
+    .post-template-default .home-hero ::after {
+      content: "\f10e";
+      right: 100px;
+      top: 270px;
+      color: #0c0;
+      font-family: FontAwesome;
+      font-size: 125px;
+      position: absolute; }
   .entry-title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1123,7 +1119,10 @@ div.entry-content {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-size: 22px; } }
+    font-size: 22px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 #new-quote-button {
   position: relative;
