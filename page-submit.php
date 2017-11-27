@@ -35,7 +35,7 @@ get_header(); ?>
 
 <div>
 <label for="quote-source-url">Website url:</label>
-<input type="url" name="quote_source_url" id="quote-source-url" >
+<textarea rows="1" cols="40" type="url" name="quote_source_url" id="quote-source-url" ></textarea>
 </div>
 
 <button id="submit" type="button" value="Submit Quote">Submit Quote</button>
