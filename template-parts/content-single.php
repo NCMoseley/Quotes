@@ -9,19 +9,16 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
-
-		
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-
-		<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
+		<div class="author"><?php the_title( '<h2 class="entry-title">', '</h2>' ); ?></div>
 	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->
 
-<button type="button" id="new-quote-button">Show Me Another!</button>
+<button type="button" class="ne"><?php previous_post_link( '%link', 'Previous Entry', TRUE ); ?></button>
+<button type="button" class="ne"><?php next_post_link( '%link', 'Next Entry', TRUE ); ?></button>
+
+

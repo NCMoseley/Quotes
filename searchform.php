@@ -1,3 +1,9 @@
+
+
+
+
+
+
 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 	<fieldset>
 		<label>

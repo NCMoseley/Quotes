@@ -61,7 +61,9 @@
 }
 
 .author {
+    display: inline-flex;
     font-weight: 100;
+    align-items: baseline;
 }
 
 .author::before {
@@ -75,12 +77,6 @@
 
 /* All Archives Page */
 
-.nav-next {
-    display: none;
-}
-.nav-previous {
-    display: none;
-}
 @media (min-width: 1080px) {
     .post-archives {
         display: flex;
@@ -151,6 +147,7 @@
     width: 658px;
     p {
         text-align: left;
+        font-size: $font__size__sm;
     }
     h1 {
         justify-content: baseline;
@@ -190,7 +187,7 @@
         p {
             display: flex;
             width: 60vw;
-            padding: $lg__unit 0 $lg__unit 0;
+            padding: 0 0 $lg__unit 0;
             text-align: center;
             justify-content: center;
             align-items: center;
@@ -199,7 +196,7 @@
         }
     }
     .home-hero {
-        padding-top: 3rem;
+        // padding-top: 3rem;
          ::before {
             content: "\f10d";
             left: 100px;
@@ -226,6 +223,7 @@ article {
     width: 60%;
     border-bottom: 1px dotted $color__white;
     p {
+        
         font-size: 40px;
         font-weight: 100;
     }
@@ -253,6 +251,9 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+div.entry-content{
+    border: none;
 }
 
 // <-- Main page CSS --> //
@@ -328,7 +329,6 @@ article {
         align-items: center;
     }
 }
-
 
 /* Submit a Quote Page */
 
@@ -449,3 +449,58 @@ input, textarea {
 
 /* Single Page */
 
+.single {
+    article {
+    width: 60%;
+    border-bottom: none;
+    }
+
+}
+.nextentry{
+    display: flex;
+    justify-content: center;
+
+.ne {
+    position: relative;
+    background-color: $color__background-body;
+    font-size: $font__size__sm;
+    color: $color__green;
+    padding: 20px;
+    width: 239px;
+    height: 48px;
+    line-height: 0px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid $color__green;
+    &:hover {
+    border: 2px solid rgb(29, 71, 28);
+    }
+}
+
+.ne:after {
+    // content: "";
+    background: $color__white;
+    display: block;
+    color: $color__green;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.ne:active:after{
+    padding: 0;
+    color: $color__green;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+    
+}
+}

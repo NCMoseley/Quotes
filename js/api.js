@@ -6,8 +6,6 @@
 
    }).done( function(data) {
     
-    
-
      // Arrange Api content
      var quote = data[0].content.rendered;
      var author = data[0].title.rendered;
@@ -38,8 +36,6 @@ $('#new-quote-button').on('click', function(event) {
      var slug = data[0].slug;
      var sluggedurl = api_vars.home_url + '/' + slug + '/';
    
-
-    
       history.pushState(null, null, sluggedurl);
 
      $('#quote').html(quote);
