@@ -268,9 +268,6 @@ h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
 /* Copy */
-p {
-  margin-bottom: 1.5rem; }
-
 dfn, cite, em, i {
   font-style: italic; }
 
@@ -913,7 +910,7 @@ object {
     display: -ms-flexbox;
     display: flex;
     width: 60vw;
-    padding: 0 0 2rem 0;
+    padding: 0 0 1rem 0;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -921,7 +918,6 @@ object {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    min-height: 30vh;
     font-size: 40px; }
   .archive .home-hero ::before {
     content: "\f10d";
@@ -1041,7 +1037,7 @@ div.entry-content {
       display: -ms-flexbox;
       display: flex;
       width: 60vw;
-      padding: 0 0 2rem 0;
+      padding: 0 0 1rem 0;
       text-align: center;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -1049,7 +1045,6 @@ div.entry-content {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      min-height: 30vh;
       font-size: 40px; }
     .home .home-hero ::before,
     .single .home-hero ::before,
