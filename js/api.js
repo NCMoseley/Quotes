@@ -11,6 +11,10 @@
      var author = data[0].title.rendered;
      var source = data[0]._qod_quote_source;
     
+    if(source.length) {
+       author += ',';
+     }
+     console.log(author);
       
      $('#quote').html(quote);
      $('#author').html(author);
@@ -27,10 +31,13 @@ $('#new-quote-button').on('click', function(event) {
 
    }).done( function(data) {
      
-
      var quote = data[0].content.rendered;
      var author = data[0].title.rendered;
      var source = data[0]._qod_quote_source;
+
+     if(source.length) {
+       author += ',';
+     }
 
       // populate slug for address bar
      var slug = data[0].slug;

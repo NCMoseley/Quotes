@@ -15,13 +15,10 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
         <div class="nextentry">
-        <button type="button" class="ne"><?php next_post_link( '%link', 'Next Entry', TRUE ); ?></button>
 		<button type="button" class="ne"><?php previous_post_link( '%link', 'Previous Entry', TRUE ); ?></button> 
-          <!-- <button class=""><?php the_post_navigation(); ?></button> -->
-            
+		<button type="button" class="ne"><?php next_post_link( '%link', 'Next Entry', TRUE ); ?></button>
+          
            <!-- <a class="ne" href="<?php the_post_navigation(); ?>">Next Entry</a> -->
-
-           <!-- <?php next_post_link( '%link', 'Next Entry', TRUE ); ?> -->
         </div>
                  
 		<?php endwhile; ?>
