@@ -22,7 +22,7 @@ I enjoyed the challenge of this project. I had many learning opportunities while
 
 ## Quick Start
 
-Use 'quotesondev' as the directory to git from. 
+Use 'quotesondev' as the directory to git and gulp from. 
 
 ## Values
 

@@ -461,7 +461,6 @@ button a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -626,7 +625,7 @@ object {
   max-width: 100%; }
 
 @media (min-width: 120px) {
-  #site-navigation {
+  .main-navigation {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -635,7 +634,7 @@ object {
             justify-content: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    #site-navigation span.site-info {
+    .main-navigation span.site-info {
       color: #fff;
       margin: 0 0 0 .7rem;
       line-height: 22px; }
@@ -733,32 +732,29 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* All */
-.menu-toggle {
-  display: none; }
-
 .nav-previous {
   display: none; }
 
 .site-main {
   padding-bottom: 5rem; }
 
-#site-navigation {
+.main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   font-size: 20px; }
-  #site-navigation .proud {
+  .main-navigation .proud {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     white-space: nowrap;
     font-weight: 100; }
-    #site-navigation .proud text {
+    .main-navigation .proud text {
       color: #0c0; }
 
-#primary-menu {
+.menu-main-navigation-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,7 +764,7 @@ object {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
-  #primary-menu a {
+  .menu-main-navigation-container a {
     white-space: nowrap;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
@@ -781,7 +777,7 @@ object {
             transition-duration: .4s;
     border: 1px solid #222;
     border-right: 2px solid #fff; }
-    #primary-menu a:hover {
+    .menu-main-navigation-container a:hover {
       border: 2px solid #1d471c;
       color: #1d471c; }
 
@@ -891,7 +887,7 @@ object {
     color: #fff;
     margin: 0 0 0 .7rem;
     line-height: 22px; }
-  .archive #site-navigation {
+  .archive .main-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -912,7 +908,7 @@ object {
     padding: 0 0 3rem 0;
     border-bottom: 1px dotted #fff;
     width: 60%; }
-  .archive #quote p {
+  .archive .quotes p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1002,10 +998,10 @@ div.entry-content {
       color: #fff;
       margin: 0 0 0 .7rem;
       line-height: 22px; }
-    .home #site-navigation,
-    .single #site-navigation,
-    .page-template-default #site-navigation,
-    .post-template-default #site-navigation {
+    .home .main-navigation,
+    .single .main-navigation,
+    .page-template-default .main-navigation,
+    .post-template-default .main-navigation {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1037,10 +1033,10 @@ div.entry-content {
       .page-template-default img:hover,
       .post-template-default img:hover {
         width: 800px; }
-    .home #quote p,
-    .single #quote p,
-    .page-template-default #quote p,
-    .post-template-default #quote p {
+    .home .quotes p,
+    .single .quotes p,
+    .page-template-default .quotes p,
+    .post-template-default .quotes p {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1089,10 +1085,10 @@ div.entry-content {
             align-items: center; } }
 
 /* Submit a Quote Page */
-#submit {
+.subbtn {
   margin: 2rem 0 0 0; }
 
-#quote-submission-form {
+.quote-sub-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1105,7 +1101,7 @@ div.entry-content {
           align-items: left;
   padding-right: 5px;
   text-align: -webkit-center; }
-  #quote-submission-form div {
+  .quote-sub-form div {
     padding: 1rem;
     -webkit-box-align: left;
         -ms-flex-align: left;
@@ -1113,7 +1109,7 @@ div.entry-content {
 
 /* Media Sizing for mobile size */
 @media (max-width: 620px) {
-  #site-navigation {
+  .main-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1124,7 +1120,7 @@ div.entry-content {
         -ms-flex-align: center;
             align-items: center; } }
 
-#new-quote-button {
+.n-q-btn {
   position: relative;
   background-color: #222;
   font-size: 20px;
@@ -1134,16 +1130,15 @@ div.entry-content {
   height: 48px;
   line-height: 0px;
   -webkit-transition-duration: 0.4s;
-  /* Safari */
   transition-duration: 0.4s;
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
   border: 2px solid #0c0; }
-  #new-quote-button:hover {
+  .n-q-btn:hover {
     border: 2px solid #1d471c; }
 
-#new-quote-button:after {
+.n-q-btn:after {
   content: "";
   background: #fff;
   display: block;
@@ -1156,14 +1151,14 @@ div.entry-content {
   -webkit-transition: all 0.8s;
   transition: all 0.8s; }
 
-#new-quote-button:active:after {
+.n-q-btn:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
   -webkit-transition: 0s;
   transition: 0s; }
 
-#submit {
+.subbtn {
   position: relative;
   background-color: #222;
   font-size: 20px;
@@ -1174,16 +1169,15 @@ div.entry-content {
   line-height: 0px;
   text-align: center;
   -webkit-transition-duration: 0.4s;
-  /* Safari */
   transition-duration: 0.4s;
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
   border: 2px solid #0c0; }
-  #submit:hover {
+  .subbtn:hover {
     border: 2px solid #1d471c; }
 
-#submit:after {
+.subbtn:after {
   content: "";
   background: #fff;
   display: block;
@@ -1196,14 +1190,15 @@ div.entry-content {
   -webkit-transition: all 0.8s;
   transition: all 0.8s; }
 
-#submit:active:after {
+.subbtn:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
   -webkit-transition: 0s;
   transition: 0s; }
 
-input, textarea {
+input,
+textarea {
   background: none;
   color: #fff; }
 
@@ -1229,7 +1224,6 @@ input, textarea {
     height: 48px;
     line-height: 0px;
     -webkit-transition-duration: 0.4s;
-    /* Safari */
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;

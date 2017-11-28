@@ -19,7 +19,7 @@ get_header(); ?>
 <?php endif; ?>
 
 <div class="wrapper">
-    <p id="quote"></p>
+    <p class="quotes" id="quote"></p>
     
   <div class="authorlink">
     <h2 class="author" id="author"></h2>
@@ -30,7 +30,7 @@ get_header(); ?>
 <?php /* Start the Loop */ ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
-    <button type="button" id="new-quote-button">Show Me Another!</button>
+    <button class="n-q-btn" type="button" id="new-quote-button">Show Me Another!</button>
 
     <?php endwhile; ?>
 

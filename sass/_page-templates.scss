@@ -5,9 +5,6 @@
 
 /* All */
 
-.menu-toggle {
-    display: none;
-}
 
 .nav-previous {
     display: none;
@@ -15,10 +12,9 @@
 
 .site-main {
     padding-bottom: 5rem;
-    // text-align: center;
 }
 
-#site-navigation {
+.main-navigation {
     display: flex;
     flex-wrap: nowrap;
     font-size: $font__size__sm;
@@ -32,7 +28,7 @@
     }
 }
 
-#primary-menu {
+.menu-main-navigation-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -155,74 +151,73 @@
 }
 
 @media (min-width: 1080px) {
-.archive {
-    span.site-info {
-        color: $color__white;
-        margin: 0 0 0 .7rem;
-        line-height: 22px;
-    }
-    #site-navigation {
-        display: flex;
-        justify-content: flex-end;
-    }
-    * {
-        text-align: center;
-        text-align: -webkit-center;
-    }
-    body {
-        padding: 5%;
-    }
-    img {
-        margin: 0 auto;
-        width: 700px;
-    }
-    h1 {
-        text-align: left;
-        margin-top: 3rem;
-        padding: 0 0 3rem 0;
-        border-bottom: 1px dotted $color__white;
-        width: 60%;
-    }
-    #quote {
-        p {
+    .archive {
+        span.site-info {
+            color: $color__white;
+            margin: 0 0 0 .7rem;
+            line-height: 22px;
+        }
+        .main-navigation {
             display: flex;
-            width: 60vw;
-            padding: 0 0 $lg__unit 0;
+            justify-content: flex-end;
+        }
+        * {
             text-align: center;
-            justify-content: center;
-            align-items: center;
-            min-height: 30vh;
-            font-size: $font__size__main;
+            text-align: -webkit-center;
+        }
+        body {
+            padding: 5%;
+        }
+        img {
+            margin: 0 auto;
+            width: 700px;
+        }
+        h1 {
+            text-align: left;
+            margin-top: 3rem;
+            padding: 0 0 3rem 0;
+            border-bottom: 1px dotted $color__white;
+            width: 60%;
+        }
+        .quotes {
+            p {
+                display: flex;
+                width: 60vw;
+                padding: 0 0 $lg__unit 0;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                min-height: 30vh;
+                font-size: $font__size__main;
+            }
+        }
+        .home-hero {
+             ::before {
+                content: "\f10d";
+                left: 100px;
+                top: 400px;
+                color: $color__green;
+                font-family: FontAwesome;
+                font-size: 125px;
+                position: absolute;
+            }
+             ::after {
+                content: "\f10e";
+                right: 100px;
+                top: 400px;
+                color: $color__green;
+                font-family: FontAwesome;
+                font-size: 125px;
+                position: absolute;
+            }
         }
     }
-    .home-hero {
-         ::before {
-            content: "\f10d";
-            left: 100px;
-            top: 400px;
-            color: $color__green;
-            font-family: FontAwesome;
-            font-size: 125px;
-            position: absolute;
-        }
-         ::after {
-            content: "\f10e";
-            right: 100px;
-            top: 400px;
-            color: $color__green;
-            font-family: FontAwesome;
-            font-size: 125px;
-            position: absolute;
-        }
-    }
-}
 }
 
 article {
     width: 60%;
     border-bottom: 1px dotted $color__white;
     p {
-        
         font-size: 40px;
         font-weight: 100;
     }
@@ -251,7 +246,8 @@ article {
     justify-content: center;
     align-items: center;
 }
-div.entry-content{
+
+div.entry-content {
     border: none;
 }
 
@@ -268,11 +264,10 @@ div.entry-content{
             margin: 0 0 0 .7rem;
             line-height: 22px;
         }
-        #site-navigation {
+        .main-navigation {
             display: flex;
             justify-content: flex-end;
             margin-top: 3rem;
-            
         }
         * {
             text-align: center;
@@ -289,7 +284,7 @@ div.entry-content{
                 width: 800px;
             }
         }
-        #quote {
+        .quotes {
             p {
                 display: flex;
                 width: 60vw;
@@ -329,13 +324,14 @@ div.entry-content{
     }
 }
 
+
 /* Submit a Quote Page */
 
-#submit {
+.subbtn {
     margin: $lg__unit 0 0 0;
 }
 
-#quote-submission-form {
+.quote-sub-form {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -351,7 +347,7 @@ div.entry-content{
 /* Media Sizing for mobile size */
 
 @media (max-width: 620px) {
-    #site-navigation {
+    .main-navigation {
         display: flex;
         flex-wrap: wrap;
         font-size: 22px;
@@ -359,7 +355,7 @@ div.entry-content{
     }
 }
 
-#new-quote-button {
+.n-q-btn {
     position: relative;
     background-color: $color__background-body;
     font-size: $font__size__sm;
@@ -369,7 +365,6 @@ div.entry-content{
     height: 48px;
     line-height: 0px;
     -webkit-transition-duration: 0.4s;
-    /* Safari */
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
@@ -380,7 +375,7 @@ div.entry-content{
     }
 }
 
-#new-quote-button:after {
+.n-q-btn:after {
     content: "";
     background: $color__white;
     display: block;
@@ -393,14 +388,14 @@ div.entry-content{
     transition: all 0.8s
 }
 
-#new-quote-button:active:after {
+.n-q-btn:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
     transition: 0s
 }
 
-#submit {
+.subbtn {
     position: relative;
     background-color: $color__background-body;
     font-size: $font__size__sm;
@@ -411,7 +406,6 @@ div.entry-content{
     line-height: 0px;
     text-align: center;
     -webkit-transition-duration: 0.4s;
-    /* Safari */
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
@@ -422,7 +416,7 @@ div.entry-content{
     }
 }
 
-#submit:after {
+.subbtn:after {
     content: "";
     background: $color__white;
     display: block;
@@ -435,72 +429,68 @@ div.entry-content{
     transition: all 0.8s
 }
 
-#submit:active:after {
+.subbtn:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
     transition: 0s
 }
 
-input, textarea {
+input,
+textarea {
     background: none;
     color: $color__white;
 }
+
 
 /* Single Page */
 
 .single {
     article {
-    width: 60%;
-    border-bottom: none;
+        width: 60%;
+        border-bottom: none;
     }
-
 }
-.nextentry{
+
+.nextentry {
     display: flex;
     justify-content: center;
-
-.ne {
-    position: relative;
-    background-color: $color__background-body;
-    font-size: $font__size__sm;
-    color: $color__green;
-    padding: 20px;
-    width: 239px;
-    height: 48px;
-    line-height: 0px;
-    -webkit-transition-duration: 0.4s;
-    /* Safari */
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-    border: 2px solid $color__green;
-    &:hover {
-    border: 2px solid rgb(29, 71, 28);
+    .ne {
+        position: relative;
+        background-color: $color__background-body;
+        font-size: $font__size__sm;
+        color: $color__green;
+        padding: 20px;
+        width: 239px;
+        height: 48px;
+        line-height: 0px;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+        border: 2px solid $color__green;
+        &:hover {
+            border: 2px solid rgb(29, 71, 28);
+        }
     }
-}
-
-.ne:after {
-    // content: "";
-    background: $color__white;
-    display: block;
-    color: $color__green;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px!important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s;
-}
-
-.ne:active:after{
-    padding: 0;
-    color: $color__green;
-    margin: 0;
-    opacity: 1;
-    transition: 0s;
-    
-}
+    .ne:after {
+        background: $color__white;
+        display: block;
+        color: $color__green;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px!important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s;
+    }
+    .ne:active:after {
+        padding: 0;
+        color: $color__green;
+        margin: 0;
+        opacity: 1;
+        transition: 0s;
+    }
 }

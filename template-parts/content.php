@@ -17,7 +17,7 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true );
 	</div> <!-- .entry-content -->
   
 <div class="wrapper">
-<p class="entry-content" id="quote"></p>
+<p class="entry-content quotes" id="quote"></p>
 <h2 id="author"></h2>
 <p id="source"></p>
 <p id="link"></p>
@@ -47,6 +47,6 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true );
 
 <?php if( is_home() || is_single() ): ?>
 
-<button type="button" id="new-quote-button">Show Me Another!</button>
+<button class="n-q-btn" type="button" id="new-quote-button">Show Me Another!</button>
 
 <?php endif; ?>

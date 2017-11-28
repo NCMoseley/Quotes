@@ -19,7 +19,7 @@ object {
 
 
 @media (min-width: 120px) {
-	#site-navigation {
+	.main-navigation {
 		display: inline-flex;
 		justify-content: flex-start;
 		flex-wrap: wrap;
@@ -40,9 +40,6 @@ object {
 		width: 300px;
 		text-align: left;
 		transition-duration: 1.4s;
-        &:hover{
-        // width: 330px;
-		}
 	}
 
 }
@@ -60,9 +57,6 @@ object {
 		width: 500px;
 		text-align: left;
 		transition-duration: 1.4s;
-        &:hover{
-        // width: 550px;
-		}
 	}
 	
 }
